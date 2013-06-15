@@ -640,8 +640,6 @@ function getTouchLayer(xx, yy)
 	
 	for(var i = layersSize - 1; i >= 0; i--)
 	{	
-		//consoleDiv.innerHTML = consoleDiv.innerHTML + '</br>' + appCurrentPageLayers[i] ;
-		//alert('a ' + appCurrentPageLayers[i]) ;
 		var visible	= data[appCurrentPageLayers[i]]['visible'] ;
 		
 		var x		= data[appCurrentPageLayers[i]]['x'] ;
@@ -674,7 +672,6 @@ function getTouchLayer(xx, yy)
 			engine['touchLayer'] = appCurrentPageLayers[i] ;
 			
 			var layerType = data[engine['touchLayer']]['type'] ;
-			//alert('touchLayer ' + engine['touchLayer']) ;
 			
 			if(layerType == 'ui.layer.advanced.group')
 			{

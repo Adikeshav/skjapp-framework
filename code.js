@@ -6,15 +6,26 @@ var code =
 	{
 		'update' : function()
 		{
-			// To create video
-			// x, 
-			// y, 
-			// source - video location
-			// loop - true/false (if loop is set to true video will play continue)
-			playVideo(100, 100, "http://www.w3schools.com/html/mov_bbb.ogg", true) ;
+			if(engine["touchLayer"] == "rect2")
+			{
+				engine["touchLayer"] = undefined ;
+				alert("rect2") ;
+			}
+			else if(engine["touchLayer"] == "rect3")
+			{
+				engine["touchLayer"] = undefined ;
+				alert("rect3") ;
+			}
 			
-			// to delete video
-			//removeVideo() ;
+			else if(engine["touchLayer"] == "rect1")
+			{
+				// Checking if user stop dragging the layer return false, if layer is dragging mode return true.
+				if(drag["mode"] == false)
+				{
+					engine["touchLayer"] = undefined ;
+					alert("rect1") ;
+				}
+			}
 		}
 	}
 }

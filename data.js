@@ -44,7 +44,7 @@ var data =
 	{
 		'type'		: 'ui.page',
 		
-		'layers'	: ['BlackBackground','rect1','rect2']
+		'layers'	: ['BlackBackground','rect1','rect2','rect3']
 	},
 	
 	'BlackBackground' :
@@ -110,15 +110,14 @@ var data =
 	{
 		'type' 	: 'ui.layer.shape.rectangle',
 		
-		'x'		: 450,
-		'y'		: 150,
+		'x'		: 250,
+		'y'		: 350,
 		'width' : 100,
-		'height' : 300,
+		'height' : 100,
 		
 		'fill' : true,
 		'color' : "#ff8f7d",
 		
-		'effect' : 'slideIn',
 		'visible': true
 	},
 }
